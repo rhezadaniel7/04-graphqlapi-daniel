@@ -8,8 +8,6 @@ const pool = new Pool({
     ssl: { rejectUnauthorized: false },
 });
 
-console.log("DATABASE_URL ada?", !!process.env.DATABASE_URL);
-
 const typeDefs = `#graphql
   type Kategori {
     id: ID!
@@ -52,7 +50,7 @@ const resolvers = {
 const server = new ApolloServer({
     typeDefs,
     resolvers,
-    introspection: true, // WAJIB on agar Apollo Sandbox dosen bisa membaca schema
+    introspection: true,
 });
 
 const graphqlHandler = startServerAndCreateNextHandler(server);

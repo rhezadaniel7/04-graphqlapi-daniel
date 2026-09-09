@@ -10,9 +10,9 @@
     "dependencies": {
         "@apollo/server": "^5.5.1",
         "@as-integrations/next": "^4.1.0",
-        "graphql": "^16.11.0",
+        "graphql": "^16.14.2",
         "next": "^15.5.0",
-        "pg": "^8.16.0",
+        "pg": "^8.23.0",
         "react": "^19.0.0",
         "react-dom": "^19.0.0"
     }
